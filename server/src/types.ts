@@ -28,6 +28,7 @@ export interface Game {
   questionStartTime?: number;
   questionTimer?: NodeJS.Timeout;
   playerAnswers: Map<string, { answerIndex: number; timestamp: number }>;
+  resolvingQuestion?: boolean;
 }
 
 export interface User {
